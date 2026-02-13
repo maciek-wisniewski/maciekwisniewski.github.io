@@ -1,0 +1,16 @@
+{
+  "year": "2025",
+  "publications": [
+    {
+      "title": "Efficient Geometric Priors for Molecular Docking",
+      "authors": ["Maciej Wisniewski", "Ewa Roman", "Pawel Lis"],
+      "journal": "IEEE/ACM Transactions on Computational Biology",
+      "year": "2025",
+      "doi": "10.1109/TCBB.2025.56789",
+      "pdf_url": "https://example.org/papers/geometric-priors-2025.pdf",
+      "code_url": "https://github.com/example/geo-priors",
+      "abstract": "An approach to inject geometry-aware priors into docking optimization.",
+      "keywords": ["Docking", "Geometry", "Optimization"]
+    }
+  ]
+}

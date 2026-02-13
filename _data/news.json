@@ -1,0 +1,29 @@
+[
+  {
+    "id": "paper-2026-nat-comms",
+    "date": "2026-02-01",
+    "title": "New paper accepted in Nature Communications",
+    "description": "Our team published a method for robust multimodal biomedical representation learning.",
+    "link": "#research-publications",
+    "type": "publication",
+    "featured": true
+  },
+  {
+    "id": "grant-2026-eu",
+    "date": "2026-01-15",
+    "title": "Consortium awarded EU collaborative grant",
+    "description": "A new cross-institution project on translational AI starts in Spring 2026.",
+    "link": "#research-projects",
+    "type": "funding",
+    "featured": true
+  },
+  {
+    "id": "talk-2025-mlsys",
+    "date": "2025-11-20",
+    "title": "Invited keynote at MLSys Europe",
+    "description": "Talk on reproducible AI pipelines for academic labs.",
+    "link": "https://example.org/mlsys-europe",
+    "type": "conference",
+    "featured": false
+  }
+]

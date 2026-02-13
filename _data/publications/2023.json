@@ -1,0 +1,16 @@
+{
+  "year": "2023",
+  "publications": [
+    {
+      "title": "Early Career Study on Data-efficient Bioinformatics Pipelines",
+      "authors": ["Maciej Wisniewski", "Alicja Kruk"],
+      "journal": "Bioinformatics Advances",
+      "year": "2023",
+      "doi": "10.1093/bioadv/vbad123",
+      "pdf_url": "https://example.org/papers/data-efficient-2023.pdf",
+      "code_url": "https://github.com/example/bio-pipelines",
+      "abstract": "Techniques for reducing data requirements while preserving model utility.",
+      "keywords": ["Bioinformatics", "Data Efficiency"]
+    }
+  ]
+}

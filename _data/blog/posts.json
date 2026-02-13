@@ -1,0 +1,22 @@
+[
+  {
+    "id": "flow-matching",
+    "title": "Flow Matching for Scientific ML",
+    "date": "2026-01-12",
+    "excerpt": "How flow matching helps construct stable generative trajectories in scientific domains.",
+    "content": "data/blog/content/flow-matching.md",
+    "tags": ["Generative Models", "Scientific ML"],
+    "featured": true,
+    "read_time": "7 min read"
+  },
+  {
+    "id": "lab-reproducibility",
+    "title": "Reproducibility Checklist for Academic Labs",
+    "date": "2025-12-02",
+    "excerpt": "A practical checklist that improves experimental reliability and handoffs.",
+    "content": "data/blog/content/lab-reproducibility.md",
+    "tags": ["MLOps", "Research Engineering"],
+    "featured": false,
+    "read_time": "5 min read"
+  }
+]

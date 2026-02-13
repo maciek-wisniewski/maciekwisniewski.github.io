@@ -1,5 +1,5 @@
-title: maciekwisniewski.github.io
-description: Personal site generated from README.md
+title: Academic Portfolio
+description: JSON-driven Jekyll academic portfolio website
 markdown: kramdown
 kramdown:
   input: GFM

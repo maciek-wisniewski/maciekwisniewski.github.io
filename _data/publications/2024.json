@@ -1,0 +1,16 @@
+{
+  "year": "2024",
+  "publications": [
+    {
+      "title": "Transformer Models for Cross-Cohort Single-cell Annotation",
+      "authors": ["Maciej Wisniewski", "Marta Zielinska"],
+      "journal": "Cell Systems",
+      "year": "2024",
+      "doi": "10.1016/j.cels.2024.11223",
+      "pdf_url": "https://example.org/papers/sc-transformers-2024.pdf",
+      "code_url": "https://github.com/example/sc-transformers",
+      "abstract": "A transfer-learning strategy for robust annotation across sequencing platforms.",
+      "keywords": ["Single-cell", "Transfer Learning"]
+    }
+  ]
+}

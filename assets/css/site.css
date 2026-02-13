@@ -1,97 +1,290 @@
 :root {
-  --bg: #f2efe7;
-  --ink: #1f2937;
-  --muted: #5b6472;
-  --card: #fffcf6;
-  --accent: #0f766e;
-  --border: #d2cab8;
+  --prussian-blue: #001427;
+  --deep-teal: #708d81;
+  --jasmine: #f4d58d;
+  --brick-ember: #bf0603;
+  --blood-red: #8d0801;
+  --paper: #fff8e8;
+  --ink: #0f1b2d;
 }
 
 * {
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  color: var(--ink);
-  background:
-    radial-gradient(circle at 12% 18%, #ffd9ae 0%, transparent 25%),
-    radial-gradient(circle at 82% 8%, #bde9e4 0%, transparent 22%),
-    var(--bg);
-  font-family: "Avenir Next", "Segoe UI", sans-serif;
-  line-height: 1.7;
+html {
+  scroll-behavior: smooth;
 }
 
-.site-wrap {
-  width: min(900px, calc(100% - 2rem));
-  margin: 3.5rem auto;
+body {
+  margin: 0;
+  padding-top: 4.5rem;
+  font-family: "Avenir Next", "Trebuchet MS", sans-serif;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 85% 12%, rgb(244 213 141 / 0.42), transparent 30%),
+    radial-gradient(circle at 12% 22%, rgb(112 141 129 / 0.22), transparent 34%),
+    #fdf9ef;
+  line-height: 1.6;
+}
+
+.site-nav {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  border-bottom: 1px solid rgb(0 20 39 / 0.18);
+  backdrop-filter: blur(7px);
+  background: rgb(255 248 232 / 0.9);
+}
+
+.site-nav-inner {
+  width: min(1200px, calc(100% - 2rem));
+  margin: 0 auto;
+  min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.9rem;
+}
+
+.site-brand {
+  text-decoration: none;
+  color: var(--prussian-blue);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.site-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.site-links a {
+  text-decoration: none;
+  color: var(--prussian-blue);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+}
+
+.site-links a:hover {
+  background: var(--jasmine);
+  color: var(--blood-red);
+}
+
+.site-main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 0 auto 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.section {
+  scroll-margin-top: 5.2rem;
 }
 
 .hero {
-  margin-bottom: 1.5rem;
+  padding: 1.3rem 1.4rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(0 20 39 / 0.2);
+  background: linear-gradient(135deg, var(--prussian-blue), #153656);
+  color: #fffdf8;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.2vw, 3rem);
+  line-height: 1.1;
+}
+
+.lead {
+  margin: 0.8rem 0 0;
+  max-width: 760px;
+  color: rgb(255 248 232 / 0.9);
 }
 
 .eyebrow {
   display: inline-block;
-  margin: 0 0 0.5rem;
-  padding: 0.2rem 0.6rem;
+  margin: 0 0 0.65rem;
+  padding: 0.2rem 0.55rem;
   border-radius: 999px;
-  background: #e4f7f4;
-  color: var(--accent);
-  font-size: 0.82rem;
+  background: var(--jasmine);
+  color: var(--blood-red);
+  font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
-h1 {
-  margin: 0;
-  font-size: clamp(1.9rem, 2.8vw, 2.8rem);
-  line-height: 1.15;
+.hero-actions {
+  margin-top: 0.95rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
 }
 
-.subtitle {
-  margin: 0.7rem 0 0;
-  color: var(--muted);
+.btn {
+  display: inline-block;
+  border-radius: 0.55rem;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--jasmine);
+  color: var(--prussian-blue);
+}
+
+.btn-ghost {
+  border-color: rgb(255 248 232 / 0.5);
+  color: #fffdf8;
 }
 
 .card {
-  padding: clamp(1rem, 2.2vw, 2rem);
-  border: 1px solid var(--border);
+  padding: 1.2rem;
+  background: var(--paper);
+  border: 1px solid rgb(0 20 39 / 0.16);
   border-radius: 1rem;
-  background: var(--card);
-  box-shadow: 0 12px 24px rgb(17 24 39 / 0.08);
+  box-shadow: 0 10px 24px rgb(0 20 39 / 0.08);
 }
 
-.markdown-body h1,
-.markdown-body h2,
-.markdown-body h3 {
-  line-height: 1.25;
+.section-head h2 {
+  margin: 0;
+  color: var(--prussian-blue);
 }
 
-.markdown-body a {
-  color: var(--accent);
-  text-decoration-thickness: 2px;
+.section-head p {
+  margin: 0.3rem 0 0.9rem;
+  color: #3f4f5f;
 }
 
-.markdown-body code {
-  padding: 0.12rem 0.36rem;
-  border-radius: 0.3rem;
-  background: #ede5d6;
+.stack-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.stack-item {
+  padding: 0.85rem;
+  border: 1px solid rgb(0 20 39 / 0.15);
+  border-radius: 0.8rem;
+  background: #fffdf7;
+}
+
+.featured {
+  border-left: 5px solid var(--brick-ember);
+}
+
+.meta {
+  margin: 0;
+  color: #425261;
+  font-size: 0.88rem;
+}
+
+.stack-item h3,
+.project-card h4,
+.course-card h3 {
+  margin: 0.28rem 0 0.32rem;
+}
+
+.stack-item p,
+.project-card p,
+.course-card p {
+  margin: 0.2rem 0;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.75rem;
+}
+
+.project-card,
+.course-card {
+  padding: 0.85rem;
+  border: 1px solid rgb(0 20 39 / 0.14);
+  border-radius: 0.8rem;
+  background: #fffef9;
+}
+
+.tags {
+  color: var(--deep-teal);
+  font-size: 0.92rem;
+}
+
+.pub-year {
+  margin-top: 0.75rem;
+  padding-top: 0.25rem;
+}
+
+.pub-year ol {
+  margin: 0.4rem 0 0;
+  padding-left: 1.3rem;
+}
+
+.supervision {
+  margin: 0.55rem 0 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.supervision span {
+  background: rgb(112 141 129 / 0.16);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+}
+
+.contact-form {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 0.3rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid rgb(0 20 39 / 0.22);
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.6rem;
+  font: inherit;
+  background: #fffdf7;
+}
+
+code {
   font-family: "SF Mono", Menlo, Consolas, monospace;
-  font-size: 0.92em;
+  background: #ece9dd;
+  border-radius: 0.3rem;
+  padding: 0.05rem 0.3rem;
 }
 
-.markdown-body pre {
-  overflow-x: auto;
-  padding: 1rem;
-  border-radius: 0.7rem;
-  background: #202734;
-  color: #f7fafc;
-}
+@media (max-width: 780px) {
+  body {
+    padding-top: 6.9rem;
+  }
 
-@media (max-width: 640px) {
-  .site-wrap {
-    margin: 2rem auto;
+  .site-nav-inner {
+    padding: 0.5rem 0;
+    min-height: 6.9rem;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr;
   }
 }

@@ -1,0 +1,54 @@
+{
+  "teaching": {
+    "intro": "I teach data-driven biology and machine learning courses with a project-first approach.",
+    "philosophy": "My goal is to combine strong theoretical grounding with reproducible, practical workflows.",
+    "supervision": {
+      "phd_students": 3,
+      "master_students": 6,
+      "undergraduate_projects": 10
+    },
+    "teaching_awards": [
+      {
+        "title": "Excellence in Graduate Teaching",
+        "institution": "UKSW",
+        "year": "2024"
+      }
+    ]
+  },
+  "courses": [
+    {
+      "id": "intro-to-bioinf-and-comp-genomics",
+      "title": "Introduction to Bioinformatics and Computational Genomics",
+      "level": "Undergraduate",
+      "semester": "Spring 2026",
+      "year": "2025/2026",
+      "institution": "Warsaw University of Technology",
+      "description": "Core computational methods for biomolecular data analysis.",
+      "credits": 4,
+      "students": 24,
+      "schedule": "TBA",
+      "room": "TBA",
+      "content": "data/teaching/courses/intro-to-bioinf-and-comp-genomics.md",
+      "status": "current",
+      "featured": true,
+      "tags": ["Genomics", "Python", "Statistics"]
+    },
+    {
+      "id": "ml-for-biomedical-data",
+      "title": "Machine Learning for Biomedical Data",
+      "level": "Graduate",
+      "semester": "Fall 2025",
+      "year": "2025/2026",
+      "institution": "UKSW",
+      "description": "Modeling high-dimensional biomedical signals with modern ML.",
+      "credits": 3,
+      "students": 18,
+      "schedule": "Wed, 14:00-17:00",
+      "room": "Building B, Room 112",
+      "content": "data/teaching/courses/ml-for-biomedical-data.md",
+      "status": "past",
+      "featured": false,
+      "tags": ["Machine Learning", "Healthcare"]
+    }
+  ]
+}

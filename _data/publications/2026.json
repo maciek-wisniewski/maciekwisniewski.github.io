@@ -1,0 +1,16 @@
+{
+  "year": "2026",
+  "publications": [
+    {
+      "title": "Robust Multimodal Representation Learning for Biomedical Discovery",
+      "authors": ["Maciej Wisniewski", "Anna Nowak", "Jan Kowalski"],
+      "journal": "Nature Communications",
+      "year": "2026",
+      "doi": "10.1038/s41467-026-12345",
+      "pdf_url": "https://example.org/papers/biomed-mmrl-2026.pdf",
+      "code_url": "https://github.com/example/biomed-mmrl",
+      "abstract": "A multimodal framework for combining omics and imaging modalities under domain shifts.",
+      "keywords": ["Multimodal Learning", "Biomedical AI", "Domain Adaptation"]
+    }
+  ]
+}
