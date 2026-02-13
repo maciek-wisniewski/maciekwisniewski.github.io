@@ -1,0 +1,5 @@
+title: maciekwisniewski.github.io
+description: Personal site generated from README.md
+markdown: kramdown
+kramdown:
+  input: GFM
