@@ -1,6 +1,7 @@
 [
   {
     "id": "rapid-docking",
+    "url": "/research/projects/rapid-docking/",
     "title": "RapidDock",
     "duration": "2024 - Present",
     "status": "active",
@@ -20,6 +21,7 @@
   },
   {
     "id": "single-cell-foundation",
+    "url": "/research/projects/single-cell-foundation/",
     "title": "SingleCell Foundation Model",
     "duration": "2022 - 2025",
     "status": "completed",

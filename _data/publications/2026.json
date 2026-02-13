@@ -2,6 +2,8 @@
   "year": "2026",
   "publications": [
     {
+      "id": "mmrl-biomedical-discovery",
+      "url": "/research/papers/mmrl-biomedical-discovery/",
       "title": "Robust Multimodal Representation Learning for Biomedical Discovery",
       "authors": ["Maciej Wisniewski", "Anna Nowak", "Jan Kowalski"],
       "journal": "Nature Communications",

@@ -2,6 +2,8 @@
   "year": "2025",
   "publications": [
     {
+      "id": "geometric-priors-molecular-docking",
+      "url": "/research/papers/geometric-priors-molecular-docking/",
       "title": "Efficient Geometric Priors for Molecular Docking",
       "authors": ["Maciej Wisniewski", "Ewa Roman", "Pawel Lis"],
       "journal": "IEEE/ACM Transactions on Computational Biology",

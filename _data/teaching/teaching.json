@@ -18,6 +18,7 @@
   "courses": [
     {
       "id": "intro-to-bioinf-and-comp-genomics",
+      "url": "/teaching/courses/intro-to-bioinf-and-comp-genomics/",
       "title": "Introduction to Bioinformatics and Computational Genomics",
       "level": "Undergraduate",
       "semester": "Spring 2026",
@@ -35,6 +36,7 @@
     },
     {
       "id": "ml-for-biomedical-data",
+      "url": "/teaching/courses/ml-for-biomedical-data/",
       "title": "Machine Learning for Biomedical Data",
       "level": "Graduate",
       "semester": "Fall 2025",

@@ -92,6 +92,18 @@ body {
   color: #fffdf8;
 }
 
+.hero-page {
+  padding: 1.2rem 1.3rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  color: var(--jasmine);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .hero h1 {
   margin: 0;
   font-size: clamp(1.8rem, 3.2vw, 3rem);
@@ -152,6 +164,41 @@ body {
   box-shadow: 0 10px 24px rgb(0 20 39 / 0.08);
 }
 
+.page-card h2 {
+  color: var(--prussian-blue);
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.85rem;
+}
+
+.link-card {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  border: 1px solid rgb(0 20 39 / 0.16);
+  background: #fffdf7;
+  text-decoration: none;
+  color: var(--prussian-blue);
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--deep-teal);
+}
+
+.link-card h3 {
+  margin: 0 0 0.35rem;
+}
+
+.link-card p {
+  margin: 0;
+  color: #3f4f5f;
+}
+
 .section-head h2 {
   margin: 0;
   color: var(--prussian-blue);
@@ -172,6 +219,13 @@ body {
   border: 1px solid rgb(0 20 39 / 0.15);
   border-radius: 0.8rem;
   background: #fffdf7;
+}
+
+.stack-item a,
+.project-card a,
+.course-card a,
+.page-card a {
+  color: var(--blood-red);
 }
 
 .featured {
@@ -216,6 +270,11 @@ body {
   background: #fffef9;
 }
 
+.project-card h3,
+.course-card h3 {
+  margin: 0.35rem 0;
+}
+
 .tags {
   color: var(--deep-teal);
   font-size: 0.92rem;
@@ -242,6 +301,49 @@ body {
   background: rgb(112 141 129 / 0.16);
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
+}
+
+.inline-link {
+  font-weight: 600;
+  text-decoration-thickness: 2px;
+}
+
+.tab-actions {
+  display: flex;
+  gap: 0.55rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  border: 1px solid rgb(0 20 39 / 0.2);
+  border-radius: 999px;
+  background: #fffdf7;
+  color: var(--prussian-blue);
+  padding: 0.35rem 0.8rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.tab-btn.is-active {
+  background: var(--jasmine);
+  border-color: var(--deep-teal);
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.is-active {
+  display: block;
+}
+
+.social-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.social-list li {
+  margin: 0.35rem 0;
 }
 
 .contact-form {
@@ -286,5 +388,9 @@ code {
 
   .two-col {
     grid-template-columns: 1fr;
+  }
+
+  .tab-actions {
+    flex-wrap: wrap;
   }
 }

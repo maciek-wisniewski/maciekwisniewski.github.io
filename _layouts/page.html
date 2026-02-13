@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<main class="site-main page-shell">
+  <header class="section hero hero-page">
+    {% if page.back_url %}
+    <a class="back-link" href="{{ page.back_url | relative_url }}">Back</a>
+    {% endif %}
+    {% if page.eyebrow %}
+    <p class="eyebrow">{{ page.eyebrow }}</p>
+    {% endif %}
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="lead">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <section class="section card page-card">
+    {{ content }}
+  </section>
+</main>

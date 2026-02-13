@@ -1,6 +1,7 @@
 [
   {
     "id": "flow-matching",
+    "url": "/blog/posts/flow-matching/",
     "title": "Flow Matching for Scientific ML",
     "date": "2026-01-12",
     "excerpt": "How flow matching helps construct stable generative trajectories in scientific domains.",
@@ -11,6 +12,7 @@
   },
   {
     "id": "lab-reproducibility",
+    "url": "/blog/posts/lab-reproducibility/",
     "title": "Reproducibility Checklist for Academic Labs",
     "date": "2025-12-02",
     "excerpt": "A practical checklist that improves experimental reliability and handoffs.",
