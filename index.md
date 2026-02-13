@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Academic Portfolio
+permalink: /
 ---
 {% assign publication_years = "2026,2025,2024,2023" | split: "," %}
 {% assign sorted_news = site.data.news | sort: "date" | reverse %}

@@ -2,6 +2,8 @@ title: Academic Portfolio
 description: JSON-driven Jekyll academic portfolio website
 url: https://maciek-wisniewski.github.io
 baseurl: /maciekwisniewski.github.io
+exclude:
+  - README.md
 markdown: kramdown
 kramdown:
   input: GFM
