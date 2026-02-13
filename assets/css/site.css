@@ -179,9 +179,19 @@ body {
   grid-template-columns: minmax(220px, 280px) minmax(0, 1fr);
   gap: 1rem;
   margin-bottom: 1rem;
+  align-items: center;
+}
+
+.profile-frame {
+  position: relative;
+  display: grid;
+  place-items: center;
+  justify-self: center;
 }
 
 .profile-photo-placeholder {
+  width: 100%;
+  max-width: 280px;
   min-height: 320px;
   border: 2px dashed rgb(0 20 39 / 0.25);
   border-radius: 0.8rem;
@@ -191,6 +201,8 @@ body {
   align-content: center;
   justify-items: center;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .profile-photo {
@@ -201,6 +213,32 @@ body {
   border-radius: 0.8rem;
   border: 1px solid rgb(0 20 39 / 0.18);
   box-shadow: 0 8px 22px rgb(0 20 39 / 0.16);
+  position: relative;
+  z-index: 2;
+}
+
+.peptide-asset {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  width: 160px;
+  transform: translate(-50%, 24px) rotate(-6deg);
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.profile-frame:hover .peptide-asset,
+.profile-frame:focus-within .peptide-asset {
+  opacity: 1;
+  animation: peptide-float 1.6s ease-in-out infinite;
+}
+
+.home-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .photo-label {
@@ -449,5 +487,29 @@ code {
   .profile-photo {
     max-width: 100%;
     min-height: 220px;
+  }
+
+  .peptide-asset {
+    width: 130px;
+    bottom: -12px;
+  }
+}
+
+@keyframes peptide-float {
+  0% {
+    transform: translate(-50%, 24px) rotate(-6deg);
+  }
+  50% {
+    transform: translate(-50%, 10px) rotate(4deg);
+  }
+  100% {
+    transform: translate(-50%, 24px) rotate(-3deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .profile-frame:hover .peptide-asset,
+  .profile-frame:focus-within .peptide-asset {
+    animation: none;
   }
 }

@@ -6,31 +6,33 @@ eyebrow: Home
 subtitle: Computational Scientist · AI for Molecular Biology and Toxicology
 ---
 <div class="home-intro">
-  {% assign profile_image = site.static_files | where: "path", "/assets/images/profile/maciej-wisniewski.jpg" | first %}
-  {% if profile_image %}
-  <img class="profile-photo" src="{{ '/assets/images/profile/maciej-wisniewski.jpg' | relative_url }}" alt="Maciej Wisniewski profile photo">
-  {% else %}
-  <div class="profile-photo-placeholder">
-    <p class="photo-label">Profile photo placeholder</p>
-    <p class="photo-path"><code>assets/images/profile/maciej-wisniewski.jpg</code></p>
+  <div class="profile-frame">
+    <img class="peptide-asset" src="{{ '/assets/images/profile/peptide-asset-1.png' | relative_url }}" alt="">
+    {% assign profile_image = site.static_files | where: "path", "/assets/images/profile/maciej-wisniewski.jpg" | first %}
+    {% if profile_image %}
+    <img class="profile-photo" src="{{ '/assets/images/profile/maciej-wisniewski.jpg' | relative_url }}" alt="Maciej Wisniewski profile photo">
+    {% else %}
+    <div class="profile-photo-placeholder">
+      <p class="photo-label">Profile photo placeholder</p>
+      <p class="photo-path"><code>assets/images/profile/maciej-wisniewski.jpg</code></p>
+    </div>
+    {% endif %}
   </div>
-  {% endif %}
-  <div>
-    <p class="home-anchor">I develop machine-learning models and physics-informed methods for molecular dynamics, protein-ligand interactions, and mechanistic toxicity prediction.</p>
-    <p>I am a computational researcher working at the intersection of machine learning, molecular dynamics, and systems biology. My work focuses on generative and flow-based models for molecular systems, protein structure and conformational dynamics, and physically grounded modeling for biomolecular data.</p>
+  <div class="home-text">
+    <p class="home-anchor">I develop machine-learning models and physics-informed methods for Molecular Dynamics Simulations, protein-ligand interactions and biomolecular complexes.</p>
+    <p>I am a computational researcher working at the intersection of machine learning, bioinformatics, and pharmacy. My work focuses on generative and flow-based models for molecular systems, protein structure and conformational dynamics, and physically grounded modeling for biomolecular data.</p>
     <p><strong>Research interests include:</strong></p>
     <ul>
-      <li>Machine learning for molecular dynamics and protein structure</li>
-      <li>Flow matching and diffusion models on geometric manifolds</li>
+      <li>Explainable Deep Learning</li>
+      <li>Flow Matching and Diffusion models algorythms</li>
       <li>Protein-ligand and protein-protein interaction modeling</li>
       <li>Physics-informed and energy-based neural networks</li>
     </ul>
     <p>Currently based in Poland, working on independent and collaborative research projects in computational biology and AI-driven molecular modeling.</p>
-    <p>See <strong>Research</strong> for ongoing projects and publications, and <strong>Blog</strong> for technical notes and research commentary.</p>
   </div>
 </div>
 
-<h2>Sections</h2>
+<h2>Explore the site</h2>
 <div class="link-grid">
   <a class="link-card" href="{{ '/news/' | relative_url }}">
     <h3>News</h3>
