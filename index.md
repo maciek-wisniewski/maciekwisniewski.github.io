@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Maciej Wisniewski
+title: Maciej Wisniewski's Academic Portfolio
 permalink: /
 eyebrow: Home
-subtitle: Computational Scientist · AI for Molecular Biology and Toxicology
+subtitle: Computational Scientist · AI for Molecular Biology
 hero_wide: true
 ---
 <div class="home-intro">
