@@ -16,7 +16,9 @@ layout: default
       {% endif %}
     </div>
     {% if page.hero_wide %}
-    <img class="hero-decor" src="{{ '/assets/images/profile/protein-asset-1.png' | relative_url }}" alt="" aria-hidden="true">
+    <div class="hero-decor" aria-hidden="true">
+      <img class="hero-decor-img" src="{{ '/assets/images/profile/protein-asset-1.png' | relative_url }}" alt="">
+    </div>
     {% endif %}
   </header>
 
