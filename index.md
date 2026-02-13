@@ -6,8 +6,8 @@ eyebrow: Home
 subtitle: Computational Scientist · AI for Molecular Biology and Toxicology
 ---
 <div class="home-intro">
-  <div class="profile-frame">
-    <img class="peptide-asset" src="{{ '/assets/images/profile/peptide-asset-1.png' | relative_url }}" alt="">
+  <div class="profile-frame" id="profile-frame">
+    <img class="peptide-asset" src="{{ '/assets/images/profile/peptide-asset-1.png' | relative_url }}" alt="" aria-hidden="true">
     {% assign profile_image = site.static_files | where: "path", "/assets/images/profile/maciej-wisniewski.jpg" | first %}
     {% if profile_image %}
     <img class="profile-photo" src="{{ '/assets/images/profile/maciej-wisniewski.jpg' | relative_url }}" alt="Maciej Wisniewski profile photo">
@@ -59,3 +59,18 @@ subtitle: Computational Scientist · AI for Molecular Biology and Toxicology
     <p>Social links and professional contact channels.</p>
   </a>
 </div>
+
+<script>
+  (function () {
+    var frame = document.getElementById('profile-frame');
+    if (!frame) return;
+
+    frame.addEventListener('mouseenter', function () {
+      frame.classList.add('is-peptide-active');
+    });
+
+    frame.addEventListener('mouseleave', function () {
+      frame.classList.remove('is-peptide-active');
+    });
+  }());
+</script>
