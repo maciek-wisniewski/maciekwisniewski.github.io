@@ -96,6 +96,15 @@ body {
   padding: 1.2rem 1.3rem;
 }
 
+.hero-wide {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  border-radius: 0;
+  padding-left: max(1.5rem, calc((100vw - 1100px) / 2));
+  padding-right: max(1.5rem, calc((100vw - 1100px) / 2));
+}
+
 .back-link {
   display: inline-block;
   margin-bottom: 0.6rem;
@@ -170,7 +179,7 @@ body {
 
 .link-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.85rem;
 }
 
@@ -180,6 +189,7 @@ body {
   gap: 1rem;
   margin-bottom: 1rem;
   align-items: center;
+  justify-items: center;
 }
 
 .profile-frame {
@@ -189,7 +199,7 @@ body {
   justify-self: center;
   width: 100%;
   max-width: 280px;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .profile-photo-placeholder {
@@ -223,7 +233,7 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  transform: translateY(45%) rotate(-6deg);
+  transform: translateY(85%) rotate(-6deg);
   opacity: 0;
   z-index: 1;
   pointer-events: none;
@@ -233,13 +243,15 @@ body {
 .profile-frame.is-peptide-active .peptide-asset {
   opacity: 1;
   animation: peptide-float 1.4s ease-in-out infinite;
-  transform: translateY(15%) rotate(2deg);
+  transform: translateY(55%) rotate(2deg);
 }
 
 .home-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 560px;
+  justify-self: center;
 }
 
 .photo-label {
@@ -481,6 +493,10 @@ code {
     grid-template-columns: 1fr;
   }
 
+  .link-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .profile-photo-placeholder {
     min-height: 220px;
   }
@@ -492,18 +508,24 @@ code {
 
 @keyframes peptide-float {
   0% {
-    transform: translateY(22%) rotate(-4deg);
+    transform: translateY(65%) rotate(-6deg);
   }
   50% {
-    transform: translateY(6%) rotate(3deg);
+    transform: translateY(48%) rotate(4deg);
   }
   100% {
-    transform: translateY(22%) rotate(-2deg);
+    transform: translateY(65%) rotate(-3deg);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .profile-frame.is-peptide-active .peptide-asset {
     animation: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .link-grid {
+    grid-template-columns: 1fr;
   }
 }

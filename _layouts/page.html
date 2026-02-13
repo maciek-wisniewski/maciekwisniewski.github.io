@@ -2,7 +2,7 @@
 layout: default
 ---
 <main class="site-main page-shell">
-  <header class="section hero hero-page">
+  <header class="section hero hero-page{% if page.hero_wide %} hero-wide{% endif %}">
     {% if page.back_url %}
     <a class="back-link" href="{{ page.back_url | relative_url }}">Back</a>
     {% endif %}

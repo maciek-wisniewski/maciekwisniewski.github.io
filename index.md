@@ -4,6 +4,7 @@ title: Maciej Wisniewski
 permalink: /
 eyebrow: Home
 subtitle: Computational Scientist · AI for Molecular Biology and Toxicology
+hero_wide: true
 ---
 <div class="home-intro">
   <div class="profile-frame" id="profile-frame">
