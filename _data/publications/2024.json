@@ -2,17 +2,17 @@
   "year": "2024",
   "publications": [
     {
-      "id": "transformer-cross-cohort-single-cell",
-      "url": "/research/papers/transformer-cross-cohort-single-cell/",
-      "title": "Transformer Models for Cross-Cohort Single-cell Annotation",
-      "authors": ["Maciej Wisniewski", "Marta Zielinska"],
-      "journal": "Cell Systems",
+      "id": "rapiddock",
+      "url": "/research/papers/rapiddock/",
+      "title": "RapidDock: Unlocking Proteome-scale Molecular Docking",
+      "authors": ["Rafał Powalski", "Bazyli Klockiewicz", "Maciej Jaśkowski", "Bartosz Topolski", "Paweł Dąbrowski-Tumański", "Maciej Wiśniewski", "Łukasz Kuciński", "Piotr Miłoś", "Dariusz Plewczynski"],
+      "journal": "Arxiv",
       "year": "2024",
-      "doi": "10.1016/j.cels.2024.11223",
-      "pdf_url": "https://example.org/papers/sc-transformers-2024.pdf",
-      "code_url": "https://github.com/example/sc-transformers",
-      "abstract": "A transfer-learning strategy for robust annotation across sequencing platforms.",
-      "keywords": ["Single-cell", "Transfer Learning"]
+      "doi": "https://doi.org/10.48550/arXiv.2411.00004",
+      "pdf_url": "https://arxiv.org/pdf/2411.00004",
+      "code_url": "TBA",
+      "abstract": "Accelerating molecular docking – the process of predicting how molecules bind to protein targets – could boost small-molecule drug discovery and revolution- ize medicine. Unfortunately, current molecular docking tools are too slow to screen potential drugs against all relevant proteins, which often results in missed drug candidates or unexpected side effects occurring in clinical trials. To ad- dress this gap, we introduce RAPIDDOCK, an efficient transformer-based model for blind molecular docking. RAPIDDOCK achieves at least a 100×speed advan- tage over existing methods without compromising accuracy. On the Posebusters and DockGen benchmarks, our method achieves 52.1% and 44.0% success rates (RMSD <2Å), respectively. The average inference time is 0.04 seconds on a sin- gle GPU, highlighting RAPIDDOCK’s potential for large-scale docking studies. We examine the key features of RAPIDDOCK that enable leveraging the trans- former architecture for molecular docking, including the use of relative distance embeddings of 3D structures in attention matrices, pre-training on protein folding, and a custom loss function invariant to molecular symmetries.",
+      "keywords": ["Molecular Docking", "Transformer", "Deep Learning"]
     }
   ]
 }

@@ -1,41 +1,20 @@
 [
   {
-    "id": "rapid-docking",
-    "url": "/research/projects/rapid-docking/",
-    "title": "RapidDock",
-    "duration": "2024 - Present",
+    "id": "ebus-object-detection",
+    "url": "/research/projects/ebus/",
+    "title": "WUT and MSWIA collaborate on EBUS Object Detection",
+    "duration": "2025 - Present",
     "status": "active",
-    "description": "Accelerating protein-ligand docking with geometric deep learning.",
-    "detailed_description": "RapidDock combines equivariant models with simulation constraints to improve docking speed while preserving chemical realism.",
-    "tags": ["Computational Biology", "Geometric Deep Learning", "Drug Discovery"],
-    "funding": "National Science Centre OPUS",
-    "collaborators": ["Dr. Anna Nowak", "Dr. Jan Kowalski"],
-    "publications": 2,
-    "github_repo": "https://github.com/example/rapiddock",
-    "website": "https://example.org/rapiddock",
+    "description": "We are collaborating with the MSWIA to develop a lymphatic nodes detection and classifcation model for the EBUS diagnostic technique.",
+    "detailed_description": "We are developing a lymphatic nodes detection and classifcation model for the EBUS diagnostic technique. The model is based on a deep learning architecture and is trained on a large dataset of EBUS images.",
+    "tags": ["Medical Imaging", "Deep Learning", "Object Detection"],
+    "funding": "WUT and MSWIA",
+    "collaborators": [""],
+    "publications": 0,
+    "github_repo": "TBA",
+    "website": "TBA",
     "key_achievements": [
-      "3.1x faster inference vs baseline",
-      "Improved top-1 docking accuracy by 9%",
-      "Open benchmark and reproducible training scripts"
-    ]
-  },
-  {
-    "id": "single-cell-foundation",
-    "url": "/research/projects/single-cell-foundation/",
-    "title": "SingleCell Foundation Model",
-    "duration": "2022 - 2025",
-    "status": "completed",
-    "description": "Transfer learning for single-cell transcriptomic annotation.",
-    "detailed_description": "A transformer-based model trained on multi-cohort datasets for robust cell-state classification.",
-    "tags": ["Single-cell", "Transformers", "Bioinformatics"],
-    "funding": "Horizon Europe",
-    "collaborators": ["Prof. Marta Zielinska"],
-    "publications": 3,
-    "github_repo": "https://github.com/example/sc-foundation",
-    "website": "https://example.org/sc-foundation",
-    "key_achievements": [
-      "Published in top-tier venue",
-      "Integrated model into internal analysis pipeline"
+      "TBA"
     ]
   }
 ]

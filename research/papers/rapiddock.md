@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Robust Multimodal Representation Learning for Biomedical Discovery
-permalink: /research/papers/mmrl-biomedical-discovery/
+title: RapidDock: Unlocking Proteome-scale Molecular Docking
+permalink: /research/papers/rapiddock/
 back_url: /research/
 eyebrow: Paper
 subtitle: Publication details
 ---
-{% assign bucket = site.data.publications["2026"] %}
-{% assign pub = bucket.publications | where: "id", "mmrl-biomedical-discovery" | first %}
+{% assign bucket = site.data.publications["2024"] %}
+{% assign pub = bucket.publications | where: "id", "rapiddock" | first %}
 <p><strong>Authors:</strong> {{ pub.authors | join: ", " }}</p>
 <p><strong>Venue:</strong> {{ pub.journal }} ({{ pub.year }})</p>
 <p><strong>DOI:</strong> {{ pub.doi }}</p>

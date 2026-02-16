@@ -1,32 +1,22 @@
 [
   {
-    "id": "paper-2026-nat-comms",
-    "url": "/news/paper-2026-nat-comms/",
-    "date": "2026-02-01",
-    "title": "New paper accepted in Nature Communications",
-    "description": "Our team published a method for robust multimodal biomedical representation learning.",
+    "id": "rapiddock-nvidia-gtc-2025",
+    "url": "/news/rapiddock-nvidia-gtc-2025/",
+    "date": "2025-03-15",
+    "title": "RapidDock Poster accepted in NVIDIA GTC 2025, San Jose",
+    "description": "Our Ingenix.AI team published a method for ultrafast protein-ligand docking.",
     "link": "#research-publications",
     "type": "publication",
     "featured": true
   },
   {
-    "id": "grant-2026-eu",
-    "url": "/news/grant-2026-eu/",
-    "date": "2026-01-15",
-    "title": "Consortium awarded EU collaborative grant",
-    "description": "A new cross-institution project on translational AI starts in Spring 2026.",
+    "id": "ebus-object-detection-wut-mswia",
+    "url": "/news/ebus-object-detection-wut-mswia/",
+    "date": "2025-02-16",
+    "title": "WUT and MSWIA collaborate on EBUS Object Detection",
+    "description": "We are collaborating with the MSWIA to develop a lymphatic nodes detection and classifcation model for the EBUS diagnostic technique.",
     "link": "#research-projects",
-    "type": "funding",
+    "type": "project",
     "featured": true
-  },
-  {
-    "id": "talk-2025-mlsys",
-    "url": "/news/talk-2025-mlsys/",
-    "date": "2025-11-20",
-    "title": "Invited keynote at MLSys Europe",
-    "description": "Talk on reproducible AI pipelines for academic labs.",
-    "link": "https://example.org/mlsys-europe",
-    "type": "conference",
-    "featured": false
   }
 ]
